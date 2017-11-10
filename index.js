@@ -17,7 +17,7 @@ function getHappyErnesto (text) {
 
 function sendCorrectAnswerMessage (bot, message) {
   const firstMessage = 'Finally someone who understands me!';
-  const secondMessage = "Congratulations my friend. You have passed the challenge. Send your contact details at http://typeform.com/ and Talented crew will contact you for the prize";
+  const secondMessage = "Congratulations my friend. You have passed the challenge. Send your contact details at https://talented.typeform.com/to/KznG2Y and Talented crew will contact you for the prize";
   bot.reply(message, getHappyErnesto(firstMessage));
   setTimeout(function () {
     bot.reply(message, getHappyErnesto(secondMessage));
