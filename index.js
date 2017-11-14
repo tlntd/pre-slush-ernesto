@@ -38,7 +38,8 @@ function getRandomHelloMessage () {
   const greetings = [
     "Hello to you too!",
     "How can I help?",
-    "Hello, I'm Ernesto"
+    "Hello, I'm Ernesto",
+    "I bet you're here for the answer? You have to ask the right question."
   ];
   return getRandomValueFromArray(greetings);
 }
@@ -51,7 +52,8 @@ function getRandomWhineMessage () {
     "You know my ex? The one that still seeks my attention.",
     "You can count yourself very lucky to have me around",
     "I really could whine all day long about my life",
-    "Today, my ex tried to convince me to propose by telling me that the sooner we get married, the sooner she'll get pregnant."
+    "Today, my ex tried to convince me to propose by telling me that the sooner we get married, the sooner she'll get pregnant.",
+    "I bet you're here for the answer? You have to ask the right question."
   ];
   return getRandomValueFromArray(whines);
 }
