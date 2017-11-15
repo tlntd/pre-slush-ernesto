@@ -4,7 +4,10 @@ var controller = Botkit.slackbot({debug: false});
 controller.spawn({token: process.env.SLACK_TOKEN}).startRTM();
 
 function isCorrectMessage (text) {
-  return text.toLowerCase() === "Why can't I have Ernesto back in my life?".toLowerCase();
+  const curlyString = "Why can’t I have Ernesto back in my life?".toLowerCase();
+  const correctString = "Why can't I have Ernesto back in my life?".toLowerCase();
+  const userText = text.toLowerCase();
+  return (userText === correctString) || (userText === curlyString);
 }
 
 function getHappyErnesto (text) {
